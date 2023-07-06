@@ -1,0 +1,1747 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_7441f9952b4b6736bf21df91db152bc1 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    <h3 align="center" style="font-size:20px"><b>Most Popular Routes</b></h3>
+    
+            <div class="folium-map" id="map_7441f9952b4b6736bf21df91db152bc1" ></div>
+        
+</body>
+<script>
+    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_7441f9952b4b6736bf21df91db152bc1 = L.map(
+                                  'map_7441f9952b4b6736bf21df91db152bc1',
+                                  {center: [40.71458404,-74.04281706],
+                                  zoom: 12,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_898fb9121b52a781fb6306700d53ef00 = L.tileLayer(
+                'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_7441f9952b4b6736bf21df91db152bc1);
+        
+    
+            var marker_cluster_f1041e5fef70a5ac57cb156355b29ef0 = L.markerClusterGroup({
+                
+            });
+            map_7441f9952b4b6736bf21df91db152bc1.addLayer(marker_cluster_f1041e5fef70a5ac57cb156355b29ef0);
+            
+    
+
+            var marker_6b3ec9d36dc4ea400a55e973c2b3a57f = L.marker(
+                [40.71458404,-74.04281706],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_f1041e5fef70a5ac57cb156355b29ef0);
+            
+    
+
+                var icon_61246275bfcbd7034bdcf18647f5743e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6b3ec9d36dc4ea400a55e973c2b3a57f.setIcon(icon_61246275bfcbd7034bdcf18647f5743e);
+            
+    
+            var popup_2513021fe05a666d549fe1ae2564e496 = L.popup({maxWidth: '300'});
+
+            
+                var html_0b8780ac265f548dfecbb50d4c36384c = $('<div id="html_0b8780ac265f548dfecbb50d4c36384c" style="width: 100.0%; height: 100.0%;">Start Marin Light Rail Usage in a month: 290</div>')[0];
+                popup_2513021fe05a666d549fe1ae2564e496.setContent(html_0b8780ac265f548dfecbb50d4c36384c);
+            
+
+            marker_6b3ec9d36dc4ea400a55e973c2b3a57f.bindPopup(popup_2513021fe05a666d549fe1ae2564e496);
+
+            
+        
+    
+
+            var marker_7144666c9bf94ee444c7e85e5c0f9ce7 = L.marker(
+                [40.71958612,-74.04311746],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_f1041e5fef70a5ac57cb156355b29ef0);
+            
+    
+
+                var icon_a95a7011aa3aa4d6ee763313e46e2d11 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7144666c9bf94ee444c7e85e5c0f9ce7.setIcon(icon_a95a7011aa3aa4d6ee763313e46e2d11);
+            
+    
+            var popup_8821641c952e96f76425706e37e36c4e = L.popup({maxWidth: '300'});
+
+            
+                var html_2835c81267d42370dab417a4b681ed26 = $('<div id="html_2835c81267d42370dab417a4b681ed26" style="width: 100.0%; height: 100.0%;">End Grove St PATH Usage in a month: 290</div>')[0];
+                popup_8821641c952e96f76425706e37e36c4e.setContent(html_2835c81267d42370dab417a4b681ed26);
+            
+
+            marker_7144666c9bf94ee444c7e85e5c0f9ce7.bindPopup(popup_8821641c952e96f76425706e37e36c4e);
+
+            
+        
+    
+                var poly_line_19ce00461e161ad00a206cb28f97bc05 = L.polyline(
+                    [[40.71458404, -74.04281706], [40.71958612, -74.04311746]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1.0,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 3
+}).addTo(map_7441f9952b4b6736bf21df91db152bc1);
+            
+    
+            var marker_cluster_ddcf168f0743e77fb0e34ab2fc30a019 = L.markerClusterGroup({
+                
+            });
+            map_7441f9952b4b6736bf21df91db152bc1.addLayer(marker_cluster_ddcf168f0743e77fb0e34ab2fc30a019);
+            
+    
+
+            var marker_b708038823e842d04cb20e754bae98f3 = L.marker(
+                [40.71958612,-74.04311746],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_ddcf168f0743e77fb0e34ab2fc30a019);
+            
+    
+
+                var icon_9136737c602eb65ed9ecd25309f8036a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b708038823e842d04cb20e754bae98f3.setIcon(icon_9136737c602eb65ed9ecd25309f8036a);
+            
+    
+            var popup_4b6057817d06db5f81458b3960e1b823 = L.popup({maxWidth: '300'});
+
+            
+                var html_78a71404bf5a23651a52d4f96df6a6a4 = $('<div id="html_78a71404bf5a23651a52d4f96df6a6a4" style="width: 100.0%; height: 100.0%;">Start Grove St PATH Usage in a month: 290</div>')[0];
+                popup_4b6057817d06db5f81458b3960e1b823.setContent(html_78a71404bf5a23651a52d4f96df6a6a4);
+            
+
+            marker_b708038823e842d04cb20e754bae98f3.bindPopup(popup_4b6057817d06db5f81458b3960e1b823);
+
+            
+        
+    
+
+            var marker_85eee2d173bec8fc1eb0746d652adaf9 = L.marker(
+                [40.71458404,-74.04281706],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_ddcf168f0743e77fb0e34ab2fc30a019);
+            
+    
+
+                var icon_c0ec10f5d79f20c6d833f640e571ea26 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_85eee2d173bec8fc1eb0746d652adaf9.setIcon(icon_c0ec10f5d79f20c6d833f640e571ea26);
+            
+    
+            var popup_bd4da88a9a7a0f32567fbd61671b59c6 = L.popup({maxWidth: '300'});
+
+            
+                var html_c1a905ff598febba579ad238fa1be77d = $('<div id="html_c1a905ff598febba579ad238fa1be77d" style="width: 100.0%; height: 100.0%;">End Marin Light Rail Usage in a month: 290</div>')[0];
+                popup_bd4da88a9a7a0f32567fbd61671b59c6.setContent(html_c1a905ff598febba579ad238fa1be77d);
+            
+
+            marker_85eee2d173bec8fc1eb0746d652adaf9.bindPopup(popup_bd4da88a9a7a0f32567fbd61671b59c6);
+
+            
+        
+    
+                var poly_line_a6dbdac45cd24ba170c7838b8e439f4f = L.polyline(
+                    [[40.71958612, -74.04311746], [40.71458404, -74.04281706]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1.0,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 3
+}).addTo(map_7441f9952b4b6736bf21df91db152bc1);
+            
+    
+            var marker_cluster_be777557dd7cc047aac1a94e7ff42f0d = L.markerClusterGroup({
+                
+            });
+            map_7441f9952b4b6736bf21df91db152bc1.addLayer(marker_cluster_be777557dd7cc047aac1a94e7ff42f0d);
+            
+    
+
+            var marker_a50826360c786058caee352cf7810477 = L.marker(
+                [40.73593758,-74.03030455],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_be777557dd7cc047aac1a94e7ff42f0d);
+            
+    
+
+                var icon_843f26a259aea78deafc3cce9e398891 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a50826360c786058caee352cf7810477.setIcon(icon_843f26a259aea78deafc3cce9e398891);
+            
+    
+            var popup_132e7e7896aed28468717453f9dc8162 = L.popup({maxWidth: '300'});
+
+            
+                var html_7d33cba6e263747fc877702663631e76 = $('<div id="html_7d33cba6e263747fc877702663631e76" style="width: 100.0%; height: 100.0%;">Start Hoboken Terminal - Hudson St & Hudson Pl Usage in a month: 260</div>')[0];
+                popup_132e7e7896aed28468717453f9dc8162.setContent(html_7d33cba6e263747fc877702663631e76);
+            
+
+            marker_a50826360c786058caee352cf7810477.bindPopup(popup_132e7e7896aed28468717453f9dc8162);
+
+            
+        
+    
+
+            var marker_cd6516aaf3ae2d9a43baab0886ed3428 = L.marker(
+                [40.73520838,-74.04696375],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_be777557dd7cc047aac1a94e7ff42f0d);
+            
+    
+
+                var icon_25c04c4db70a4a809d657bdad81d57d6 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_cd6516aaf3ae2d9a43baab0886ed3428.setIcon(icon_25c04c4db70a4a809d657bdad81d57d6);
+            
+    
+            var popup_bbead235b7faeae9e2dc5f916187ed36 = L.popup({maxWidth: '300'});
+
+            
+                var html_443a4c3a23e1bf2d192cb1cf0db06d20 = $('<div id="html_443a4c3a23e1bf2d192cb1cf0db06d20" style="width: 100.0%; height: 100.0%;">End Hoboken Ave at Monmouth St Usage in a month: 260</div>')[0];
+                popup_bbead235b7faeae9e2dc5f916187ed36.setContent(html_443a4c3a23e1bf2d192cb1cf0db06d20);
+            
+
+            marker_cd6516aaf3ae2d9a43baab0886ed3428.bindPopup(popup_bbead235b7faeae9e2dc5f916187ed36);
+
+            
+        
+    
+                var poly_line_12bd890365e5927b22d50ea8161f31c6 = L.polyline(
+                    [[40.73593758, -74.03030455], [40.73520838, -74.04696375]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1.0,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 3
+}).addTo(map_7441f9952b4b6736bf21df91db152bc1);
+            
+    
+            var marker_cluster_d90dc4a96b72b3cff7293276bb2b6bb7 = L.markerClusterGroup({
+                
+            });
+            map_7441f9952b4b6736bf21df91db152bc1.addLayer(marker_cluster_d90dc4a96b72b3cff7293276bb2b6bb7);
+            
+    
+
+            var marker_ed4bb28e8f86824c0e4071f068da6351 = L.marker(
+                [40.72759597,-74.04424731],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d90dc4a96b72b3cff7293276bb2b6bb7);
+            
+    
+
+                var icon_71d2215459f39da6398534e0ddd0df6b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'purple',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ed4bb28e8f86824c0e4071f068da6351.setIcon(icon_71d2215459f39da6398534e0ddd0df6b);
+            
+    
+            var popup_f8ae28afbfd2265cf862dac637b3378b = L.popup({maxWidth: '300'});
+
+            
+                var html_8dd698bff98d8f50896bcc016c959374 = $('<div id="html_8dd698bff98d8f50896bcc016c959374" style="width: 100.0%; height: 100.0%;">Start Hamilton Park Usage in a month: 250</div>')[0];
+                popup_f8ae28afbfd2265cf862dac637b3378b.setContent(html_8dd698bff98d8f50896bcc016c959374);
+            
+
+            marker_ed4bb28e8f86824c0e4071f068da6351.bindPopup(popup_f8ae28afbfd2265cf862dac637b3378b);
+
+            
+        
+    
+
+            var marker_e434d3d9d922bd67d2777796973146a6 = L.marker(
+                [40.71958612,-74.04311746],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d90dc4a96b72b3cff7293276bb2b6bb7);
+            
+    
+
+                var icon_bd5ef41bc7388a306bb71309f2ec57f6 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'purple',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e434d3d9d922bd67d2777796973146a6.setIcon(icon_bd5ef41bc7388a306bb71309f2ec57f6);
+            
+    
+            var popup_2189d781fd445c15513c8c8d57985720 = L.popup({maxWidth: '300'});
+
+            
+                var html_cef16e219871940fa5810372bae77893 = $('<div id="html_cef16e219871940fa5810372bae77893" style="width: 100.0%; height: 100.0%;">End Grove St PATH Usage in a month: 250</div>')[0];
+                popup_2189d781fd445c15513c8c8d57985720.setContent(html_cef16e219871940fa5810372bae77893);
+            
+
+            marker_e434d3d9d922bd67d2777796973146a6.bindPopup(popup_2189d781fd445c15513c8c8d57985720);
+
+            
+        
+    
+                var poly_line_a6d3ec29a2e14140ed5de0eb964d225f = L.polyline(
+                    [[40.72759597, -74.04424731], [40.71958612, -74.04311746]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "purple",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1.0,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 3
+}).addTo(map_7441f9952b4b6736bf21df91db152bc1);
+            
+    
+            var marker_cluster_60b07f02828bc81e00253d3e833c4c4b = L.markerClusterGroup({
+                
+            });
+            map_7441f9952b4b6736bf21df91db152bc1.addLayer(marker_cluster_60b07f02828bc81e00253d3e833c4c4b);
+            
+    
+
+            var marker_d252b26dfbbd475583b6c10c2987c6c8 = L.marker(
+                [40.71958612,-74.04311746],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_60b07f02828bc81e00253d3e833c4c4b);
+            
+    
+
+                var icon_2e4714b2e5fbd8cb65188f1eb130dcbe = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d252b26dfbbd475583b6c10c2987c6c8.setIcon(icon_2e4714b2e5fbd8cb65188f1eb130dcbe);
+            
+    
+            var popup_7e10ba6d50ed2d26bdf52cb52de860c8 = L.popup({maxWidth: '300'});
+
+            
+                var html_8a9ecb2547db164367108a8f1ae1e231 = $('<div id="html_8a9ecb2547db164367108a8f1ae1e231" style="width: 100.0%; height: 100.0%;">Start Grove St PATH Usage in a month: 243</div>')[0];
+                popup_7e10ba6d50ed2d26bdf52cb52de860c8.setContent(html_8a9ecb2547db164367108a8f1ae1e231);
+            
+
+            marker_d252b26dfbbd475583b6c10c2987c6c8.bindPopup(popup_7e10ba6d50ed2d26bdf52cb52de860c8);
+
+            
+        
+    
+
+            var marker_8e53687ac63e2d1a0b3bd074c398ee7a = L.marker(
+                [40.72759597,-74.04424731],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_60b07f02828bc81e00253d3e833c4c4b);
+            
+    
+
+                var icon_b421b2359878f64ae9fd099eec1fb67e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8e53687ac63e2d1a0b3bd074c398ee7a.setIcon(icon_b421b2359878f64ae9fd099eec1fb67e);
+            
+    
+            var popup_d4f36a00dc4d091f396daf59329a688f = L.popup({maxWidth: '300'});
+
+            
+                var html_9efab6fac47a58c6c842869a9bea3e7f = $('<div id="html_9efab6fac47a58c6c842869a9bea3e7f" style="width: 100.0%; height: 100.0%;">End Hamilton Park Usage in a month: 243</div>')[0];
+                popup_d4f36a00dc4d091f396daf59329a688f.setContent(html_9efab6fac47a58c6c842869a9bea3e7f);
+            
+
+            marker_8e53687ac63e2d1a0b3bd074c398ee7a.bindPopup(popup_d4f36a00dc4d091f396daf59329a688f);
+
+            
+        
+    
+                var poly_line_c03cce5f528e05e0d604c6b00a1dc8dd = L.polyline(
+                    [[40.71958612, -74.04311746], [40.72759597, -74.04424731]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "orange",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "orange",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1.0,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 3
+}).addTo(map_7441f9952b4b6736bf21df91db152bc1);
+            
+    
+            var marker_cluster_6e731fa43a5e0c429743d8fb1cd3c576 = L.markerClusterGroup({
+                
+            });
+            map_7441f9952b4b6736bf21df91db152bc1.addLayer(marker_cluster_6e731fa43a5e0c429743d8fb1cd3c576);
+            
+    
+
+            var marker_419c4769a7edfc7a11a84579dde40f36 = L.marker(
+                [40.72533993,-74.06762213],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_6e731fa43a5e0c429743d8fb1cd3c576);
+            
+    
+
+                var icon_21600755d24bed66fa65fd04228e3761 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'darkred',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_419c4769a7edfc7a11a84579dde40f36.setIcon(icon_21600755d24bed66fa65fd04228e3761);
+            
+    
+            var popup_113b7c8f552d8bf2a6ec51d0d3338901 = L.popup({maxWidth: '300'});
+
+            
+                var html_d8f5332ab865b85d6f8767a5f9ebcb23 = $('<div id="html_d8f5332ab865b85d6f8767a5f9ebcb23" style="width: 100.0%; height: 100.0%;">Start McGinley Square Usage in a month: 241</div>')[0];
+                popup_113b7c8f552d8bf2a6ec51d0d3338901.setContent(html_d8f5332ab865b85d6f8767a5f9ebcb23);
+            
+
+            marker_419c4769a7edfc7a11a84579dde40f36.bindPopup(popup_113b7c8f552d8bf2a6ec51d0d3338901);
+
+            
+        
+    
+
+            var marker_9d028e2ce885ffb668d373af4d1b8a26 = L.marker(
+                [40.73100889,-74.064437],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_6e731fa43a5e0c429743d8fb1cd3c576);
+            
+    
+
+                var icon_bdccc42ec45e8fc873e3d5c81b152dd0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'darkred',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9d028e2ce885ffb668d373af4d1b8a26.setIcon(icon_bdccc42ec45e8fc873e3d5c81b152dd0);
+            
+    
+            var popup_9e31f676ab5c7b333cc29715a20b54bc = L.popup({maxWidth: '300'});
+
+            
+                var html_178f5b0079b6505308f9e15399766c18 = $('<div id="html_178f5b0079b6505308f9e15399766c18" style="width: 100.0%; height: 100.0%;">End Bergen Ave & Sip Ave Usage in a month: 241</div>')[0];
+                popup_9e31f676ab5c7b333cc29715a20b54bc.setContent(html_178f5b0079b6505308f9e15399766c18);
+            
+
+            marker_9d028e2ce885ffb668d373af4d1b8a26.bindPopup(popup_9e31f676ab5c7b333cc29715a20b54bc);
+
+            
+        
+    
+                var poly_line_e8fda0caa641a89ab0fa64f4fc23df00 = L.polyline(
+                    [[40.72533993, -74.06762213], [40.73100889, -74.064437]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "darkred",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1.0,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 3
+}).addTo(map_7441f9952b4b6736bf21df91db152bc1);
+            
+    
+            var marker_cluster_cab9f74d540ac0e475610b4e95dd8bc8 = L.markerClusterGroup({
+                
+            });
+            map_7441f9952b4b6736bf21df91db152bc1.addLayer(marker_cluster_cab9f74d540ac0e475610b4e95dd8bc8);
+            
+    
+
+            var marker_6e3e3735a27bc8e3b395d1a26eb7caeb = L.marker(
+                [40.7192517,-74.034234],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_cab9f74d540ac0e475610b4e95dd8bc8);
+            
+    
+
+                var icon_b2221ebf5bcf1f9ab94841ed42396748 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightred',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6e3e3735a27bc8e3b395d1a26eb7caeb.setIcon(icon_b2221ebf5bcf1f9ab94841ed42396748);
+            
+    
+            var popup_733f9dea937e5dd459f3f6bcec5ad362 = L.popup({maxWidth: '300'});
+
+            
+                var html_312a3e388de1d78109454ec87f2dea55 = $('<div id="html_312a3e388de1d78109454ec87f2dea55" style="width: 100.0%; height: 100.0%;">Start Harborside Usage in a month: 223</div>')[0];
+                popup_733f9dea937e5dd459f3f6bcec5ad362.setContent(html_312a3e388de1d78109454ec87f2dea55);
+            
+
+            marker_6e3e3735a27bc8e3b395d1a26eb7caeb.bindPopup(popup_733f9dea937e5dd459f3f6bcec5ad362);
+
+            
+        
+    
+
+            var marker_db535d523714bd8c0d8e5279cbb7836f = L.marker(
+                [40.71687,-74.03281],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_cab9f74d540ac0e475610b4e95dd8bc8);
+            
+    
+
+                var icon_cdf18a13e5880421a848eaaec36de7de = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightred',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_db535d523714bd8c0d8e5279cbb7836f.setIcon(icon_cdf18a13e5880421a848eaaec36de7de);
+            
+    
+            var popup_f76e230e159508ccbbfe8a556fdba65d = L.popup({maxWidth: '300'});
+
+            
+                var html_8ad8e5245addfef9d28cbd776ad5e259 = $('<div id="html_8ad8e5245addfef9d28cbd776ad5e259" style="width: 100.0%; height: 100.0%;">End Columbus Dr at Exchange Pl Usage in a month: 223</div>')[0];
+                popup_f76e230e159508ccbbfe8a556fdba65d.setContent(html_8ad8e5245addfef9d28cbd776ad5e259);
+            
+
+            marker_db535d523714bd8c0d8e5279cbb7836f.bindPopup(popup_f76e230e159508ccbbfe8a556fdba65d);
+
+            
+        
+    
+                var poly_line_a4de1565396fb851244cad0136275424 = L.polyline(
+                    [[40.7192517, -74.034234], [40.71687, -74.03281]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "lightred",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "lightred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1.0,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 3
+}).addTo(map_7441f9952b4b6736bf21df91db152bc1);
+            
+    
+            var marker_cluster_f518ffe2b2b320f01de1b1169b7b34e7 = L.markerClusterGroup({
+                
+            });
+            map_7441f9952b4b6736bf21df91db152bc1.addLayer(marker_cluster_f518ffe2b2b320f01de1b1169b7b34e7);
+            
+    
+
+            var marker_a14e7a5ce59df8f938ec7bdd6c6b4a7d = L.marker(
+                [40.75060414,-74.02402014],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_f518ffe2b2b320f01de1b1169b7b34e7);
+            
+    
+
+                var icon_280c40e3d783c46b456efb56dd50d5b7 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a14e7a5ce59df8f938ec7bdd6c6b4a7d.setIcon(icon_280c40e3d783c46b456efb56dd50d5b7);
+            
+    
+            var popup_7cd8b5d3f905d46c00c9e94895977b42 = L.popup({maxWidth: '300'});
+
+            
+                var html_dbcffd53121cbb0fe14622247dfe0ae3 = $('<div id="html_dbcffd53121cbb0fe14622247dfe0ae3" style="width: 100.0%; height: 100.0%;">Start 12 St & Sinatra Dr N Usage in a month: 210</div>')[0];
+                popup_7cd8b5d3f905d46c00c9e94895977b42.setContent(html_dbcffd53121cbb0fe14622247dfe0ae3);
+            
+
+            marker_a14e7a5ce59df8f938ec7bdd6c6b4a7d.bindPopup(popup_7cd8b5d3f905d46c00c9e94895977b42);
+
+            
+        
+    
+
+            var marker_e67aa40b4c93aa6c496d6d84e942a81f = L.marker(
+                [40.73698222,-74.02778059],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_f518ffe2b2b320f01de1b1169b7b34e7);
+            
+    
+
+                var icon_3b6b8076b8f54c684fed21aeb3532875 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'beige',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e67aa40b4c93aa6c496d6d84e942a81f.setIcon(icon_3b6b8076b8f54c684fed21aeb3532875);
+            
+    
+            var popup_8e7a7134b3f2b72b4fde617164943ed4 = L.popup({maxWidth: '300'});
+
+            
+                var html_795432a0c74c301221b10cd2c7defd56 = $('<div id="html_795432a0c74c301221b10cd2c7defd56" style="width: 100.0%; height: 100.0%;">End South Waterfront Walkway - Sinatra Dr & 1 St Usage in a month: 210</div>')[0];
+                popup_8e7a7134b3f2b72b4fde617164943ed4.setContent(html_795432a0c74c301221b10cd2c7defd56);
+            
+
+            marker_e67aa40b4c93aa6c496d6d84e942a81f.bindPopup(popup_8e7a7134b3f2b72b4fde617164943ed4);
+
+            
+        
+    
+                var poly_line_47545c51d226140864693471fa400d74 = L.polyline(
+                    [[40.75060414, -74.02402014], [40.73698222, -74.02778059]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "beige",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "beige",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1.0,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 3
+}).addTo(map_7441f9952b4b6736bf21df91db152bc1);
+            
+    
+            var marker_cluster_0670bfe64c5a92913ab147beea6303a8 = L.markerClusterGroup({
+                
+            });
+            map_7441f9952b4b6736bf21df91db152bc1.addLayer(marker_cluster_0670bfe64c5a92913ab147beea6303a8);
+            
+    
+
+            var marker_dd3be09d8875694dec76aacb88c6abbc = L.marker(
+                [40.7241765,-74.0506564],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_0670bfe64c5a92913ab147beea6303a8);
+            
+    
+
+                var icon_26b776ba37cdd40a5f899d896145a1f5 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'darkblue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_dd3be09d8875694dec76aacb88c6abbc.setIcon(icon_26b776ba37cdd40a5f899d896145a1f5);
+            
+    
+            var popup_ab2f3781a32e2cb6705777692ec97d98 = L.popup({maxWidth: '300'});
+
+            
+                var html_45c3d4f99f71463042e5a175f4ee8fb8 = $('<div id="html_45c3d4f99f71463042e5a175f4ee8fb8" style="width: 100.0%; height: 100.0%;">Start Brunswick St Usage in a month: 208</div>')[0];
+                popup_ab2f3781a32e2cb6705777692ec97d98.setContent(html_45c3d4f99f71463042e5a175f4ee8fb8);
+            
+
+            marker_dd3be09d8875694dec76aacb88c6abbc.bindPopup(popup_ab2f3781a32e2cb6705777692ec97d98);
+
+            
+        
+    
+
+            var marker_1140950e6e8b35cb05bc4e597b63aeb9 = L.marker(
+                [40.71958612,-74.04311746],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_0670bfe64c5a92913ab147beea6303a8);
+            
+    
+
+                var icon_f2fed06d08e9483f647ac25f1c3d784c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'darkblue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1140950e6e8b35cb05bc4e597b63aeb9.setIcon(icon_f2fed06d08e9483f647ac25f1c3d784c);
+            
+    
+            var popup_9843022f21cb09357d1b9f75bad24cdd = L.popup({maxWidth: '300'});
+
+            
+                var html_c5dd8d3ff4749e95d05dd6a0d3b5cc48 = $('<div id="html_c5dd8d3ff4749e95d05dd6a0d3b5cc48" style="width: 100.0%; height: 100.0%;">End Grove St PATH Usage in a month: 208</div>')[0];
+                popup_9843022f21cb09357d1b9f75bad24cdd.setContent(html_c5dd8d3ff4749e95d05dd6a0d3b5cc48);
+            
+
+            marker_1140950e6e8b35cb05bc4e597b63aeb9.bindPopup(popup_9843022f21cb09357d1b9f75bad24cdd);
+
+            
+        
+    
+                var poly_line_87dfe495e23ed9074d8773983627a24d = L.polyline(
+                    [[40.7241765, -74.0506564], [40.71958612, -74.04311746]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "darkblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkblue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1.0,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 3
+}).addTo(map_7441f9952b4b6736bf21df91db152bc1);
+            
+    
+            var marker_cluster_d928c186edf61c2976d0d364493f83a1 = L.markerClusterGroup({
+                
+            });
+            map_7441f9952b4b6736bf21df91db152bc1.addLayer(marker_cluster_d928c186edf61c2976d0d364493f83a1);
+            
+    
+
+            var marker_564b86e19019053ee404044fd4f03f6d = L.marker(
+                [40.73100889,-74.064437],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d928c186edf61c2976d0d364493f83a1);
+            
+    
+
+                var icon_7ce9964e9bfea7cf345d155fc3db8405 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'darkgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_564b86e19019053ee404044fd4f03f6d.setIcon(icon_7ce9964e9bfea7cf345d155fc3db8405);
+            
+    
+            var popup_5a09a732b9fd058eb0285809e6d9f39d = L.popup({maxWidth: '300'});
+
+            
+                var html_5acfbdf5ec7991e18d6f4333cd6f170c = $('<div id="html_5acfbdf5ec7991e18d6f4333cd6f170c" style="width: 100.0%; height: 100.0%;">Start Bergen Ave & Sip Ave Usage in a month: 208</div>')[0];
+                popup_5a09a732b9fd058eb0285809e6d9f39d.setContent(html_5acfbdf5ec7991e18d6f4333cd6f170c);
+            
+
+            marker_564b86e19019053ee404044fd4f03f6d.bindPopup(popup_5a09a732b9fd058eb0285809e6d9f39d);
+
+            
+        
+    
+
+            var marker_19d827d4032ff2241b1236a3bea6d5fa = L.marker(
+                [40.72533993,-74.06762213],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_d928c186edf61c2976d0d364493f83a1);
+            
+    
+
+                var icon_adefcb11a3ba3671c2da93d13d8f08d3 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'darkgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_19d827d4032ff2241b1236a3bea6d5fa.setIcon(icon_adefcb11a3ba3671c2da93d13d8f08d3);
+            
+    
+            var popup_400ce385587a05ba92b9d5d5643b16d7 = L.popup({maxWidth: '300'});
+
+            
+                var html_dd1c1505f2c7213d33ee2fabd6e86be5 = $('<div id="html_dd1c1505f2c7213d33ee2fabd6e86be5" style="width: 100.0%; height: 100.0%;">End McGinley Square Usage in a month: 208</div>')[0];
+                popup_400ce385587a05ba92b9d5d5643b16d7.setContent(html_dd1c1505f2c7213d33ee2fabd6e86be5);
+            
+
+            marker_19d827d4032ff2241b1236a3bea6d5fa.bindPopup(popup_400ce385587a05ba92b9d5d5643b16d7);
+
+            
+        
+    
+                var poly_line_df83b6a95a6245b2a20523cbff1042d2 = L.polyline(
+                    [[40.73100889, -74.064437], [40.72533993, -74.06762213]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "darkgreen",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkgreen",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1.0,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 3
+}).addTo(map_7441f9952b4b6736bf21df91db152bc1);
+            
+    
+            var marker_cluster_18536b3025da1142671031ea064221d4 = L.markerClusterGroup({
+                
+            });
+            map_7441f9952b4b6736bf21df91db152bc1.addLayer(marker_cluster_18536b3025da1142671031ea064221d4);
+            
+    
+
+            var marker_aa88a733cfc7c02a402123d9b4d934cc = L.marker(
+                [40.71958612,-74.04311746],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_18536b3025da1142671031ea064221d4);
+            
+    
+
+                var icon_f7b72d180824e2c57ca42a9bdf3c24da = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'cadetblue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_aa88a733cfc7c02a402123d9b4d934cc.setIcon(icon_f7b72d180824e2c57ca42a9bdf3c24da);
+            
+    
+            var popup_07dffe16f6f70bfdf2fdff71ed059dfa = L.popup({maxWidth: '300'});
+
+            
+                var html_3bd6a46cf296aa2c3ccc0b69c3d08869 = $('<div id="html_3bd6a46cf296aa2c3ccc0b69c3d08869" style="width: 100.0%; height: 100.0%;">Start Grove St PATH Usage in a month: 201</div>')[0];
+                popup_07dffe16f6f70bfdf2fdff71ed059dfa.setContent(html_3bd6a46cf296aa2c3ccc0b69c3d08869);
+            
+
+            marker_aa88a733cfc7c02a402123d9b4d934cc.bindPopup(popup_07dffe16f6f70bfdf2fdff71ed059dfa);
+
+            
+        
+    
+
+            var marker_f2e65c31cde4af9d5ddb609c99f5dfec = L.marker(
+                [40.7112423,-74.0557013],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_18536b3025da1142671031ea064221d4);
+            
+    
+
+                var icon_74c085392efa2cb6c627d14278dcfb62 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'cadetblue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f2e65c31cde4af9d5ddb609c99f5dfec.setIcon(icon_74c085392efa2cb6c627d14278dcfb62);
+            
+    
+            var popup_0d0a8ab7a1d216f067e92ee2ddcc158c = L.popup({maxWidth: '300'});
+
+            
+                var html_322de11a9e0204f5c4a025651d55058a = $('<div id="html_322de11a9e0204f5c4a025651d55058a" style="width: 100.0%; height: 100.0%;">End Liberty Light Rail Usage in a month: 201</div>')[0];
+                popup_0d0a8ab7a1d216f067e92ee2ddcc158c.setContent(html_322de11a9e0204f5c4a025651d55058a);
+            
+
+            marker_f2e65c31cde4af9d5ddb609c99f5dfec.bindPopup(popup_0d0a8ab7a1d216f067e92ee2ddcc158c);
+
+            
+        
+    
+                var poly_line_342f3873435301c20086f62343570601 = L.polyline(
+                    [[40.71958612, -74.04311746], [40.7112423, -74.0557013]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "cadetblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "cadetblue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1.0,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 3
+}).addTo(map_7441f9952b4b6736bf21df91db152bc1);
+            
+    
+            var marker_cluster_156bfa5cfc231bae3c8f9b16871f87e2 = L.markerClusterGroup({
+                
+            });
+            map_7441f9952b4b6736bf21df91db152bc1.addLayer(marker_cluster_156bfa5cfc231bae3c8f9b16871f87e2);
+            
+    
+
+            var marker_4506e612c919ceec775b44fe879ed5c8 = L.marker(
+                [40.72163014,-74.04996783],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_156bfa5cfc231bae3c8f9b16871f87e2);
+            
+    
+
+                var icon_bf8adf2749a7ed2692eecec6609bc1a5 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'darkpurple',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4506e612c919ceec775b44fe879ed5c8.setIcon(icon_bf8adf2749a7ed2692eecec6609bc1a5);
+            
+    
+            var popup_b4d916f101394aa1d536e667591f46ab = L.popup({maxWidth: '300'});
+
+            
+                var html_c5cb65d63b317101418b3075e59cf2f1 = $('<div id="html_c5cb65d63b317101418b3075e59cf2f1" style="width: 100.0%; height: 100.0%;">Start Dixon Mills Usage in a month: 196</div>')[0];
+                popup_b4d916f101394aa1d536e667591f46ab.setContent(html_c5cb65d63b317101418b3075e59cf2f1);
+            
+
+            marker_4506e612c919ceec775b44fe879ed5c8.bindPopup(popup_b4d916f101394aa1d536e667591f46ab);
+
+            
+        
+    
+
+            var marker_60911000b677a40537eaa1bc35ad6434 = L.marker(
+                [40.71958612,-74.04311746],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_156bfa5cfc231bae3c8f9b16871f87e2);
+            
+    
+
+                var icon_8c8b3d7e92913bdc709e3b44b78c47a6 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'darkpurple',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_60911000b677a40537eaa1bc35ad6434.setIcon(icon_8c8b3d7e92913bdc709e3b44b78c47a6);
+            
+    
+            var popup_2eadf46b2260b8e18490fa7c1e5a7f39 = L.popup({maxWidth: '300'});
+
+            
+                var html_9ee68af6efcadfd3e774ad1f97bb86e9 = $('<div id="html_9ee68af6efcadfd3e774ad1f97bb86e9" style="width: 100.0%; height: 100.0%;">End Grove St PATH Usage in a month: 196</div>')[0];
+                popup_2eadf46b2260b8e18490fa7c1e5a7f39.setContent(html_9ee68af6efcadfd3e774ad1f97bb86e9);
+            
+
+            marker_60911000b677a40537eaa1bc35ad6434.bindPopup(popup_2eadf46b2260b8e18490fa7c1e5a7f39);
+
+            
+        
+    
+                var poly_line_3b03f661870469f1cbda5a91530cd98d = L.polyline(
+                    [[40.72163014, -74.04996783], [40.71958612, -74.04311746]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "darkpurple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "darkpurple",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1.0,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 3
+}).addTo(map_7441f9952b4b6736bf21df91db152bc1);
+            
+    
+            var marker_cluster_8be199db0a36a1beb45ca998a0a8158b = L.markerClusterGroup({
+                
+            });
+            map_7441f9952b4b6736bf21df91db152bc1.addLayer(marker_cluster_8be199db0a36a1beb45ca998a0a8158b);
+            
+    
+
+            var marker_31ba221e9cfa0d4b8333c198657395af = L.marker(
+                [40.73520838,-74.04696375],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8be199db0a36a1beb45ca998a0a8158b);
+            
+    
+
+                var icon_99c619130f4a251ecf83425a4d2df2eb = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_31ba221e9cfa0d4b8333c198657395af.setIcon(icon_99c619130f4a251ecf83425a4d2df2eb);
+            
+    
+            var popup_ff80ea7121c0a887c23ffc4ef7143c87 = L.popup({maxWidth: '300'});
+
+            
+                var html_5e7e2049fac8b0c94c027d8146bb64ab = $('<div id="html_5e7e2049fac8b0c94c027d8146bb64ab" style="width: 100.0%; height: 100.0%;">Start Hoboken Ave at Monmouth St Usage in a month: 193</div>')[0];
+                popup_ff80ea7121c0a887c23ffc4ef7143c87.setContent(html_5e7e2049fac8b0c94c027d8146bb64ab);
+            
+
+            marker_31ba221e9cfa0d4b8333c198657395af.bindPopup(popup_ff80ea7121c0a887c23ffc4ef7143c87);
+
+            
+        
+    
+
+            var marker_adf516794ab59879f97f1126a08d2952 = L.marker(
+                [40.73593758,-74.03030455],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_8be199db0a36a1beb45ca998a0a8158b);
+            
+    
+
+                var icon_355618eff627e05c62c72bab9bcd93b2 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_adf516794ab59879f97f1126a08d2952.setIcon(icon_355618eff627e05c62c72bab9bcd93b2);
+            
+    
+            var popup_16f24cfa39ba1f80b2be95fa93e4a291 = L.popup({maxWidth: '300'});
+
+            
+                var html_0d29e3729d7adc1a7427a5386c7ac6be = $('<div id="html_0d29e3729d7adc1a7427a5386c7ac6be" style="width: 100.0%; height: 100.0%;">End Hoboken Terminal - Hudson St & Hudson Pl Usage in a month: 193</div>')[0];
+                popup_16f24cfa39ba1f80b2be95fa93e4a291.setContent(html_0d29e3729d7adc1a7427a5386c7ac6be);
+            
+
+            marker_adf516794ab59879f97f1126a08d2952.bindPopup(popup_16f24cfa39ba1f80b2be95fa93e4a291);
+
+            
+        
+    
+                var poly_line_85d88ddfc51cdb612fa28c9d9bf65e62 = L.polyline(
+                    [[40.73520838, -74.04696375], [40.73593758, -74.03030455]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "pink",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "pink",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1.0,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 3
+}).addTo(map_7441f9952b4b6736bf21df91db152bc1);
+            
+    
+            var marker_cluster_744ab07d551a322cd749fb876e73036a = L.markerClusterGroup({
+                
+            });
+            map_7441f9952b4b6736bf21df91db152bc1.addLayer(marker_cluster_744ab07d551a322cd749fb876e73036a);
+            
+    
+
+            var marker_7d57abdf0757be4e8802344ff44c56fc = L.marker(
+                [40.7112423,-74.0557013],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_744ab07d551a322cd749fb876e73036a);
+            
+    
+
+                var icon_e48c02ec020b0822ca3e07c380ce0119 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightblue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7d57abdf0757be4e8802344ff44c56fc.setIcon(icon_e48c02ec020b0822ca3e07c380ce0119);
+            
+    
+            var popup_670ef8b79933f932cd49692864315746 = L.popup({maxWidth: '300'});
+
+            
+                var html_b185327bfa542c24dfd2c0902445b5fa = $('<div id="html_b185327bfa542c24dfd2c0902445b5fa" style="width: 100.0%; height: 100.0%;">Start Liberty Light Rail Usage in a month: 190</div>')[0];
+                popup_670ef8b79933f932cd49692864315746.setContent(html_b185327bfa542c24dfd2c0902445b5fa);
+            
+
+            marker_7d57abdf0757be4e8802344ff44c56fc.bindPopup(popup_670ef8b79933f932cd49692864315746);
+
+            
+        
+    
+
+            var marker_babce6fd774e656ef009bc93d010c101 = L.marker(
+                [40.71958612,-74.04311746],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_744ab07d551a322cd749fb876e73036a);
+            
+    
+
+                var icon_fdd3f6b1c4d1a133939f3c8be3659311 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightblue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_babce6fd774e656ef009bc93d010c101.setIcon(icon_fdd3f6b1c4d1a133939f3c8be3659311);
+            
+    
+            var popup_7d986d7f02bac27e9eb2b97471d706dc = L.popup({maxWidth: '300'});
+
+            
+                var html_cf5d4a77c5d4ec7fd9850956cc350d59 = $('<div id="html_cf5d4a77c5d4ec7fd9850956cc350d59" style="width: 100.0%; height: 100.0%;">End Grove St PATH Usage in a month: 190</div>')[0];
+                popup_7d986d7f02bac27e9eb2b97471d706dc.setContent(html_cf5d4a77c5d4ec7fd9850956cc350d59);
+            
+
+            marker_babce6fd774e656ef009bc93d010c101.bindPopup(popup_7d986d7f02bac27e9eb2b97471d706dc);
+
+            
+        
+    
+                var poly_line_3574f9fc348431dac8f974de40c1db54 = L.polyline(
+                    [[40.7112423, -74.0557013], [40.71958612, -74.04311746]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "lightblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "lightblue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1.0,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 3
+}).addTo(map_7441f9952b4b6736bf21df91db152bc1);
+            
+    
+            var marker_cluster_7ad4e7444834e364cc9efa8a10526289 = L.markerClusterGroup({
+                
+            });
+            map_7441f9952b4b6736bf21df91db152bc1.addLayer(marker_cluster_7ad4e7444834e364cc9efa8a10526289);
+            
+    
+
+            var marker_5a0a9881499457e979bf9e999a8e3ed2 = L.marker(
+                [40.71687,-74.03281],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_7ad4e7444834e364cc9efa8a10526289);
+            
+    
+
+                var icon_3626b7f2a0652ee29540f39166aa0cf4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5a0a9881499457e979bf9e999a8e3ed2.setIcon(icon_3626b7f2a0652ee29540f39166aa0cf4);
+            
+    
+            var popup_03f17b861fa871b450b5af9980e2ed28 = L.popup({maxWidth: '300'});
+
+            
+                var html_03868dd7b18e1724924e3902fe618153 = $('<div id="html_03868dd7b18e1724924e3902fe618153" style="width: 100.0%; height: 100.0%;">Start Columbus Dr at Exchange Pl Usage in a month: 188</div>')[0];
+                popup_03f17b861fa871b450b5af9980e2ed28.setContent(html_03868dd7b18e1724924e3902fe618153);
+            
+
+            marker_5a0a9881499457e979bf9e999a8e3ed2.bindPopup(popup_03f17b861fa871b450b5af9980e2ed28);
+
+            
+        
+    
+
+            var marker_ec152e45498d737bebc65e121e7d1f3f = L.marker(
+                [40.7192517,-74.034234],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_7ad4e7444834e364cc9efa8a10526289);
+            
+    
+
+                var icon_45aafbac8b69433607b50f12443c467c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgreen',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ec152e45498d737bebc65e121e7d1f3f.setIcon(icon_45aafbac8b69433607b50f12443c467c);
+            
+    
+            var popup_9333e0a3913a2d092d96c64f84b05563 = L.popup({maxWidth: '300'});
+
+            
+                var html_7594f6436d6256aa9a91280660db2036 = $('<div id="html_7594f6436d6256aa9a91280660db2036" style="width: 100.0%; height: 100.0%;">End Harborside Usage in a month: 188</div>')[0];
+                popup_9333e0a3913a2d092d96c64f84b05563.setContent(html_7594f6436d6256aa9a91280660db2036);
+            
+
+            marker_ec152e45498d737bebc65e121e7d1f3f.bindPopup(popup_9333e0a3913a2d092d96c64f84b05563);
+
+            
+        
+    
+                var poly_line_e157ebb3f4e9e4971b88c71796f06243 = L.polyline(
+                    [[40.71687, -74.03281], [40.7192517, -74.034234]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "lightgreen",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "lightgreen",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1.0,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 3
+}).addTo(map_7441f9952b4b6736bf21df91db152bc1);
+            
+    
+            var marker_cluster_3c1a43f0752569cf1609209bf3ddbef8 = L.markerClusterGroup({
+                
+            });
+            map_7441f9952b4b6736bf21df91db152bc1.addLayer(marker_cluster_3c1a43f0752569cf1609209bf3ddbef8);
+            
+    
+
+            var marker_24cd1b00bb1248523e662e5c5b8e224a = L.marker(
+                [40.73698222,-74.02778059],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_3c1a43f0752569cf1609209bf3ddbef8);
+            
+    
+
+                var icon_3d79252c84447898d354365b81c0f16d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'gray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_24cd1b00bb1248523e662e5c5b8e224a.setIcon(icon_3d79252c84447898d354365b81c0f16d);
+            
+    
+            var popup_0b67650da61efb62583281ff9dbdd79f = L.popup({maxWidth: '300'});
+
+            
+                var html_4863dae6ab332bbdb1b239ee8e068032 = $('<div id="html_4863dae6ab332bbdb1b239ee8e068032" style="width: 100.0%; height: 100.0%;">Start South Waterfront Walkway - Sinatra Dr & 1 St Usage in a month: 181</div>')[0];
+                popup_0b67650da61efb62583281ff9dbdd79f.setContent(html_4863dae6ab332bbdb1b239ee8e068032);
+            
+
+            marker_24cd1b00bb1248523e662e5c5b8e224a.bindPopup(popup_0b67650da61efb62583281ff9dbdd79f);
+
+            
+        
+    
+
+            var marker_1d94ecfd398aad6f78852d1f241a929d = L.marker(
+                [40.75060414,-74.02402014],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_3c1a43f0752569cf1609209bf3ddbef8);
+            
+    
+
+                var icon_4fc33a14417055ef943462801c006311 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'gray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1d94ecfd398aad6f78852d1f241a929d.setIcon(icon_4fc33a14417055ef943462801c006311);
+            
+    
+            var popup_92b804bb0849908e3ae658684a6392cb = L.popup({maxWidth: '300'});
+
+            
+                var html_4f4c984d381b3a8ccbc79f49dbfcac2d = $('<div id="html_4f4c984d381b3a8ccbc79f49dbfcac2d" style="width: 100.0%; height: 100.0%;">End 12 St & Sinatra Dr N Usage in a month: 181</div>')[0];
+                popup_92b804bb0849908e3ae658684a6392cb.setContent(html_4f4c984d381b3a8ccbc79f49dbfcac2d);
+            
+
+            marker_1d94ecfd398aad6f78852d1f241a929d.bindPopup(popup_92b804bb0849908e3ae658684a6392cb);
+
+            
+        
+    
+                var poly_line_bf5780fa58809f5ff23356c526c05755 = L.polyline(
+                    [[40.73698222, -74.02778059], [40.75060414, -74.02402014]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "gray",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1.0,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 3
+}).addTo(map_7441f9952b4b6736bf21df91db152bc1);
+            
+    
+            var marker_cluster_6521ce8a532671f3e9646f568eddc969 = L.markerClusterGroup({
+                
+            });
+            map_7441f9952b4b6736bf21df91db152bc1.addLayer(marker_cluster_6521ce8a532671f3e9646f568eddc969);
+            
+    
+
+            var marker_479609401af2f472007cc68dc3ee90b0 = L.marker(
+                [40.71958612,-74.04311746],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_6521ce8a532671f3e9646f568eddc969);
+            
+    
+
+                var icon_1215e1fe3781b79fa7ecee66ef74167f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'black',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_479609401af2f472007cc68dc3ee90b0.setIcon(icon_1215e1fe3781b79fa7ecee66ef74167f);
+            
+    
+            var popup_80291972913dbe848eef07eacddc348c = L.popup({maxWidth: '300'});
+
+            
+                var html_f446a4d0bbc1d10195f55aa97721e3f6 = $('<div id="html_f446a4d0bbc1d10195f55aa97721e3f6" style="width: 100.0%; height: 100.0%;">Start Grove St PATH Usage in a month: 179</div>')[0];
+                popup_80291972913dbe848eef07eacddc348c.setContent(html_f446a4d0bbc1d10195f55aa97721e3f6);
+            
+
+            marker_479609401af2f472007cc68dc3ee90b0.bindPopup(popup_80291972913dbe848eef07eacddc348c);
+
+            
+        
+    
+
+            var marker_d64fcdc085931f8f3ac517805c46881b = L.marker(
+                [40.72163014,-74.04996783],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_6521ce8a532671f3e9646f568eddc969);
+            
+    
+
+                var icon_5bb98f2cf85820d84cc06b8e73b3287d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'black',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d64fcdc085931f8f3ac517805c46881b.setIcon(icon_5bb98f2cf85820d84cc06b8e73b3287d);
+            
+    
+            var popup_b6810ac690722eb739e19f55e18d4ded = L.popup({maxWidth: '300'});
+
+            
+                var html_c780f4ad46c9bc97d6fd9c60fd5a9f71 = $('<div id="html_c780f4ad46c9bc97d6fd9c60fd5a9f71" style="width: 100.0%; height: 100.0%;">End Dixon Mills Usage in a month: 179</div>')[0];
+                popup_b6810ac690722eb739e19f55e18d4ded.setContent(html_c780f4ad46c9bc97d6fd9c60fd5a9f71);
+            
+
+            marker_d64fcdc085931f8f3ac517805c46881b.bindPopup(popup_b6810ac690722eb739e19f55e18d4ded);
+
+            
+        
+    
+                var poly_line_eb3b69789bf0e43fb1d73daf21e75694 = L.polyline(
+                    [[40.71958612, -74.04311746], [40.72163014, -74.04996783]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "black",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1.0,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 3
+}).addTo(map_7441f9952b4b6736bf21df91db152bc1);
+            
+    
+            var marker_cluster_edf04f8097df6c05539ed23172303d47 = L.markerClusterGroup({
+                
+            });
+            map_7441f9952b4b6736bf21df91db152bc1.addLayer(marker_cluster_edf04f8097df6c05539ed23172303d47);
+            
+    
+
+            var marker_4a9b15e3a4d33238f696c4b0fa057cf4 = L.marker(
+                [40.71958612,-74.04311746],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_edf04f8097df6c05539ed23172303d47);
+            
+    
+
+                var icon_3f60432b2f0b0db525fcffa4e6e2c55f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4a9b15e3a4d33238f696c4b0fa057cf4.setIcon(icon_3f60432b2f0b0db525fcffa4e6e2c55f);
+            
+    
+            var popup_41ca1aca0df6abab5f232d0ccb4590ba = L.popup({maxWidth: '300'});
+
+            
+                var html_9e42b7bc99ddd1a6673e9fff7a5e8b9a = $('<div id="html_9e42b7bc99ddd1a6673e9fff7a5e8b9a" style="width: 100.0%; height: 100.0%;">Start Grove St PATH Usage in a month: 163</div>')[0];
+                popup_41ca1aca0df6abab5f232d0ccb4590ba.setContent(html_9e42b7bc99ddd1a6673e9fff7a5e8b9a);
+            
+
+            marker_4a9b15e3a4d33238f696c4b0fa057cf4.bindPopup(popup_41ca1aca0df6abab5f232d0ccb4590ba);
+
+            
+        
+    
+
+            var marker_4d365983e58af062b2a9293d1a877d1d = L.marker(
+                [40.71539114,-74.04969156],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_edf04f8097df6c05539ed23172303d47);
+            
+    
+
+                var icon_70761b381e03f9e1a4479cd52eb2a7d6 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'lightgray',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4d365983e58af062b2a9293d1a877d1d.setIcon(icon_70761b381e03f9e1a4479cd52eb2a7d6);
+            
+    
+            var popup_e852b3f44c712b245b20d8257ee66dab = L.popup({maxWidth: '300'});
+
+            
+                var html_0b4382db1651c52dba511ba32f36a2ea = $('<div id="html_0b4382db1651c52dba511ba32f36a2ea" style="width: 100.0%; height: 100.0%;">End JC Medical Center Usage in a month: 163</div>')[0];
+                popup_e852b3f44c712b245b20d8257ee66dab.setContent(html_0b4382db1651c52dba511ba32f36a2ea);
+            
+
+            marker_4d365983e58af062b2a9293d1a877d1d.bindPopup(popup_e852b3f44c712b245b20d8257ee66dab);
+
+            
+        
+    
+                var poly_line_c3f9ae5eb70d54982d8f9c620b09e55f = L.polyline(
+                    [[40.71958612, -74.04311746], [40.71539114, -74.04969156]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "lightgray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "lightgray",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1.0,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 3
+}).addTo(map_7441f9952b4b6736bf21df91db152bc1);
+            
+</script>
+</html>
